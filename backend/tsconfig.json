@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "strict": true,
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@/tests/*": ["tests/*"],
+      "@/types/*": ["types/*"],
+      "@/services/*": ["services/*"],
+      "@/helpers/*": ["helpers/*"],
+      "@/controllers/*": ["controllers/*"],
+      "@/shared/*": ["shared/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
