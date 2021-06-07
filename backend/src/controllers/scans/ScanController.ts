@@ -1,3 +1,6 @@
+import { ExpressRouteFunc } from "@/types";
+import { Request, Response } from "express";
+
 type Dependencies = {};
 
 export function ScanController({}: Dependencies): ExpressRouteFunc {
