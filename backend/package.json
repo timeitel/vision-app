@@ -1,7 +1,7 @@
 {
-  "name": "komo-receipts",
+  "name": "vision-backend",
   "version": "1.0.0",
-  "description": "Service for processing, validating receipts and awarding entries",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",

@@ -9,5 +9,5 @@ app.use("/", router);
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
-  console.log("Receipts Cloud Run service started on port: ", port);
+  console.log("Backend service started on port: ", port);
 });
