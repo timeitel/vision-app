@@ -10,6 +10,6 @@ ADD . /usr/src/app/backend
 
 RUN npm run build
 
-EXPOSE 8080
+EXPOSE 3080
 
-CMD [ "npm", "start" ]
+CMD ["npm", "run", "start"]
