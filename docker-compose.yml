@@ -2,20 +2,23 @@ version: "3"
 services:
   backend:
     build:
-      context: ./backend
+      context: ./Vision.Backend
+      dockerfile: Dockerfile
     ports:
       - "3080:3080"
     container_name: backend
     volumes:
-      - ./backend:/usr/src/app/backend
-      - /usr/src/app/backend/node_modules
+      - ./Vision.Backend:/usr/src/app/Vision.Backend
   frontend:
     build:
-      context: ./frontend
+      context: ./Vision.Frontend
+      dockerfile: Dockerfile
+    command: npm run dev
     ports:
       - "3000:3000"
     container_name: frontend
     stdin_open: true
     volumes:
-      - ./frontend:/usr/src/app/frontend
-      - /usr/src/app/frontend/node_modules
+      - ./Vision.Frontend:/usr/src/app/Vision.Frontend
+      - /usr/src/app/Vision.Frontend/node_modules
+      - /usr/src/app/Vision.Frontend/.next

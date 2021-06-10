@@ -1,12 +1,12 @@
 FROM node:10
 
-WORKDIR /usr/src/app/frontend
+WORKDIR /usr/src/app/Vision.Frontend
 
 COPY package*.json ./
 
 RUN npm install
 
-ADD . /usr/src/app/frontend
+ADD . /usr/src/app/Vision.Frontend
 
 RUN npm run build
 
