@@ -8,7 +8,7 @@ services:
       - "3080:3080"
     container_name: backend
     volumes:
-      - ./Vision.Backend:/usr/src/app/Vision.Backend
+      - ./Vision.Backend:/usr/src/app/backend
   frontend:
     build:
       context: ./Vision.Frontend
@@ -19,6 +19,6 @@ services:
     container_name: frontend
     stdin_open: true
     volumes:
-      - ./Vision.Frontend:/usr/src/app/Vision.Frontend
-      - /usr/src/app/Vision.Frontend/node_modules
-      - /usr/src/app/Vision.Frontend/.next
+      - ./Vision.Frontend:/usr/src/app/frontend
+      - /usr/src/app/frontend/node_modules
+      - /usr/src/app/frontend/.next
