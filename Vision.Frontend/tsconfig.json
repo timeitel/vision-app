@@ -15,12 +15,10 @@
     "jsx": "preserve",
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["./*"],
-      "@/tests/*": ["tests/*"],
-      "@/types/*": ["types/*"],
-      "@/services/*": ["services/*"],
-      "@/helpers/*": ["helpers/*"],
-      "@/shared/*": ["shared/*"]
+      "@*": ["./*"],
+      "@types/*": ["types/*"],
+      "@services/*": ["services/*"],
+      "@shared/*": ["shared/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
