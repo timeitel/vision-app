@@ -10,6 +10,7 @@ ADD . /app/backend-api
 
 RUN npm run build
 
+ENV PORT=3080
 EXPOSE 3080
 
 CMD ["npm", "run", "start"]
