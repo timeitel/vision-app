@@ -1,15 +1,15 @@
-FROM node:10
+FROM node:12-slim
 
-WORKDIR /usr/src/app/frontend
+WORKDIR /app/backend-api
 
 COPY package*.json ./
 
 RUN npm install
 
-ADD . /usr/src/app/frontend
+ADD . /app/backend-api
 
 RUN npm run build
 
-EXPOSE 3000
+EXPOSE 3080
 
 CMD ["npm", "run", "start"]
