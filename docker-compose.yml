@@ -11,7 +11,7 @@ services:
       - ./Backend.Api:/app/backend-api
   frontend-app:
     build:
-      context: ./Frontend.WebApp
+      context: ./Frontend.App
       dockerfile: Dockerfile
     command: npm run dev
     ports:
@@ -19,7 +19,7 @@ services:
     container_name: frontend-app
     stdin_open: true
     volumes:
-      - ./Frontend.WebApp:/app/frontend-app
+      - ./Frontend.App:/app/frontend-app
       - /app/frontend-app/node_modules
       - /app/frontend-app/.next
   frontend-website:
