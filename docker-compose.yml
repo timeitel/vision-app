@@ -28,7 +28,7 @@ services:
       dockerfile: Dockerfile
     command: npm run dev
     ports:
-      - "3000:3000"
+      - "3080:3080"
     container_name: frontend-website
     stdin_open: true
     volumes:
