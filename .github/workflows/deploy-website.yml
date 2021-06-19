@@ -13,6 +13,7 @@ jobs:
 
       - name: Install & Build
         run: |
+          cd ./Frontend.Website
           npm install --production
           npm run build
 
