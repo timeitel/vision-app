@@ -9,7 +9,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>test</h1>
+        <h1>uploaded from GH actions</h1>
       </main>
 
       <footer></footer>
