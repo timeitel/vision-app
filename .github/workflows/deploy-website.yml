@@ -27,5 +27,5 @@ jobs:
       - name: Deploy
         uses: google-github-actions/upload-cloud-storage@main
         with:
-          path: ./Frontend.Website/out
+          path: ./out
           destination: side_projects_public/vision_website
