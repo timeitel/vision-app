@@ -1,0 +1,23 @@
+name: Deploy Website
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install & Build
+        run: |
+          npm install --production
+          npm run build
+
+      - name: Deploy
+        uses: google-github-actions/upload-cloud-storage@main
+        with:
+          path: ./Frontend.Website/out
+          destination: side_projects_public/vision_website
