@@ -14,7 +14,7 @@ jobs:
       - name: Install & Build
         run: |
           cd ./Frontend.Website
-          npm install --production
+          npm install
           npm run build
 
       - name: Deploy
