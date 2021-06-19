@@ -25,12 +25,7 @@ jobs:
           export_default_credentials: true
 
       - name: Deploy
-        run: |
-          echo pwd
-          gsutil cp /Frontend.Website/out/* gs://side_projects_public/vision_website
-
-      # - name: Deploy
-      #   uses: google-github-actions/upload-cloud-storage@main
-      #   with:
-      #     path: /Frontend.Website/out
-      #     destination: side_projects_public/vision_website
+        uses: google-github-actions/upload-cloud-storage@main
+        with:
+          path: /Frontend.Website/out
+          destination: side_projects_public/vision_website
