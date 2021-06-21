@@ -2,16 +2,16 @@ version: "3"
 services:
   backend-api:
     build:
-      context: ./Backend.Api
+      context: ./backend.api
       dockerfile: Dockerfile
     ports:
       - "3080:3080"
     container_name: backend-api
     volumes:
-      - ./Backend.Api:/app/backend-api
+      - ./backend.api:/app/backend-api
   frontend-app:
     build:
-      context: ./Frontend.App
+      context: ./frontend.app
       dockerfile: Dockerfile
     command: npm run dev
     ports:
@@ -19,12 +19,12 @@ services:
     container_name: frontend-app
     stdin_open: true
     volumes:
-      - ./Frontend.App:/app/frontend-app
+      - ./frontend.app:/app/frontend-app
       - /app/frontend-app/node_modules
       - /app/frontend-app/.next
   frontend-website:
     build:
-      context: ./Frontend.Website
+      context: ./frontend.website
       dockerfile: Dockerfile
     command: npm run dev
     ports:
@@ -32,6 +32,6 @@ services:
     container_name: frontend-website
     stdin_open: true
     volumes:
-      - ./Frontend.Website:/app/frontend-website
+      - ./frontend.website:/app/frontend-website
       - /app/frontend-website/node_modules
       - /app/frontend-website/.next
