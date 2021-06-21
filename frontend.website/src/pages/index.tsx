@@ -9,7 +9,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>uploaded from GH actionas</h1>
+        <h1>uploaded again 21</h1>
       </main>
 
       <footer></footer>
