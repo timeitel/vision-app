@@ -1,4 +1,6 @@
 module.exports = {
+  assetPrefix: "/vision-app/",
+  basePath: "/vision-app",
   webpackDevMiddleware: (config) => {
     config.watchOptions = {
       poll: 1000,

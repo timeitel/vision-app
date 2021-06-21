@@ -3,7 +3,7 @@
 Tech stack:
 
 - Typescript
-- React
+- React / Next
 - Node
 - Docker
 - CI / CD
