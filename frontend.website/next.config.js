@@ -1,6 +1,10 @@
+const ghPagesPathing =
+  process.env.NODE_ENV === "production"
+    ? { assetPrefix: "/vision-app/", basePath: "/vision-app" }
+    : {};
+
 module.exports = {
-  assetPrefix: "/vision-app/",
-  basePath: "/vision-app",
+  ...ghPagesPathing,
   webpackDevMiddleware: (config) => {
     config.watchOptions = {
       poll: 1000,
