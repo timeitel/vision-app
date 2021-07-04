@@ -9,7 +9,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>fixed</h1>
+        <h1>do some work griffin</h1>
       </main>
 
       <footer></footer>
