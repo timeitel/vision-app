@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Vision App</title>
+        <title></title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
