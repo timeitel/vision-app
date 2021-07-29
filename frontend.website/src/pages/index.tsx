@@ -1,4 +1,6 @@
+import { Landing } from "@components/Landing";
 import Head from "next/head";
+import React from "react";
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>fixed</h1>
+        <Landing />
       </main>
 
       <footer></footer>
