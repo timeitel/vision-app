@@ -1,6 +1,6 @@
 const ghPagesPathing =
   process.env.NODE_ENV === "production"
-    ? { assetPrefix: "/vision-app/./", basePath: "/vision-app/." }
+    ? { assetPrefix: "/vision-app/.", basePath: "/vision-app" }
     : {};
 
 module.exports = {
