@@ -9,9 +9,14 @@ const StyledWrapper = styled.div`
 `;
 
 export const Landing: FC<Props> = ({}) => {
-  console.log("really do some work griffin");
+  console.log("do some work griffin");
 
-  const motivations = ["you can do it", "I belive in you", "nice shirt"];
+  const motivations = [
+    "you can do it",
+    "I believe in you",
+    "nice shirt",
+    "you're killing it",
+  ];
 
   return (
     <StyledWrapper>
