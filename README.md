@@ -1,7 +1,6 @@
 ## [Vision AI - full stack web app](https://tmtl.app)
 
-Tech stack:
-
+#### Tech stack
 - Typescript
 - React
 - Node
