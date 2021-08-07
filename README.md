@@ -1,4 +1,4 @@
-## [Full stack app testing vision APIs](https://tmtl.app)
+## [Vision AI - full stack web app](https://tmtl.app)
 
 Tech stack:
 
@@ -10,9 +10,9 @@ Tech stack:
 - Cloud Architecture
 - Microservices & Serverless
 
-### [Website](https://tmtl.app)
+#### [Product Website](https://tmtl.app)
 
-### [Admin Console](https://tmtl.app)
+#### [Admin Console](https://tmtl.app)
 
-### [Backend API](backend.api)
+#### [Backend API](backend.api)
 
