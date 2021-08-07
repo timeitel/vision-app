@@ -10,9 +10,9 @@ Tech stack:
 - Cloud Architecture
 - Microservices & Serverless
 
-### [Website](frontend.website)
+### [Website](https://tmtl.app)
 
-### [Frontend Console](frontend.app)
+### [Admin Console](https://tmtl.app)
 
 ### [Backend API](backend.api)
 
